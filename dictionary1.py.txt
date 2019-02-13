@@ -1,0 +1,8 @@
+word = open("file.txt") 
+def create_word_dict(f):
+    d = dict()
+    for line in f:
+        word = line.strip()
+        d[word] = word
+    return d
+print(create_word_dict(word))
